@@ -3,7 +3,7 @@ MSBD 5001 Individual Project
 
 Pre-processing:
  - Compute interval of purchase_date and release_date (pri)
- - One-hot genres (will merge tags and even categories in future)
+ - One-hot genres
 
 Feature Selection:
 drop columns:playtime_forever', 'is_free', 'genres', 'categories', 'tags', 'purchase_date','release_date'
