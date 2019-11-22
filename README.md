@@ -2,11 +2,11 @@
 MSBD 5001 Individual Project
 
 Draw 2D plots to make intuitive observe
- - Found that playtime is most related to total_positive_reviews and total_negative_reviews
+ - Found that playtime is most related to 'total_positive_reviews' and 'total_negative_reviews'
 
 Data Cleansing
  - Drop rows in training set which hava empty value
- - Fill in with mode in column 'total_negative_reviews' and 'total_positive_reviews' testing set
+ - Fill in with mode in column 'total_negative_reviews' and 'total_positive_reviews' in testing set
  - Fill in with previous data in column 'purchase_date' and 'release_data' in testing set
  
 Feature Engineering
