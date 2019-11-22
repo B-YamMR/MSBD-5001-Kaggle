@@ -16,7 +16,8 @@ Feature Engineering
  - PCA(the main purpose of PCA here is not decompsition but get rid of correlation)
 
 Feature Selection:
- - Drop columns: 'playtime_forever','is_free','price','total_positive_reviews','total_negative_reviews','genres', 'categories', 'tags', 'purchase_date','release_date'
+ - Drop features: 'playtime_forever','is_free','price','total_positive_reviews','total_negative_reviews','genres', 'categories', 'tags', 'purchase_date','release_date'
+ - Experiments proved that using 'categories' and 'tags' as features will cause SEVERE OVERFITTING, and drop 'price' or 'pur_rel_itv' will lead to UNDERFITTING.
 
 Modeling & Evaluation: Try 14 models
  - Linear Regression
@@ -43,13 +44,13 @@ Pick Top 8 Models after Fine Tuning:(sorted from best -> worst)
  - Random Forest Regressor
  - XGB Regressor
  - Elastic Net
-* Some of the model perform worse after fine tunning, which is little confusing...
+* Some of the model perform worse after fine tunning, which is a little confusing...
 
 Fine Tuning Parameters:
  - NEED A LOT OF WORK MAN...
  
 Ensemble Methods:
  - Assign weighted average to each model
- - Stacking(Use KernelRidge,SVR,Bayesian Ridge,Ridge,Lasso,Random Forest Regressor,XGB Regressor,Elastic Net in layer-1, and KernelRidge in layer-2)
+ - Stacking(Use KernelRidge,SVR,Bayesian Ridge,Ridge,Lasso,Random Forest Regressor,XGB Regressor,Elastic Net in layer#1, and KernelRidge in layer#2)
 
 Submission
