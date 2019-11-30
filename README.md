@@ -1,6 +1,8 @@
 # MSBD-5001-Kaggle 19Fall
 MSBD 5001 Individual Project
 
+Use Python 3.7
+
 Draw 2D plots to make intuitive observe
  - Found that playtime is most related to 'total_positive_reviews' and 'total_negative_reviews'
 
